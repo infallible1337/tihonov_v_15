@@ -18,19 +18,16 @@ class CameraActivity : AppCompatActivity() {
         btnFlip = findViewById(R.id.btnFlip)
         btnCapture = findViewById(R.id.btnCapture)
 
-        // Закрыть камеру
         btnClose.setOnClickListener {
             finish()
         }
 
-        // Переворот камеры (просто анимация/уведомление)
         btnFlip.setOnClickListener {
-            // Просто показываем, что кнопка работает
+            // Переворот камеры (заглушка)
         }
 
-        // Кнопка съемки (просто эффект)
         btnCapture.setOnClickListener {
-            // Просто показываем, что кнопка работает
+            // Съемка (заглушка)
         }
     }
 }

@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Онлайн-консультация", Toast.LENGTH_SHORT).show()
         }
 
-        // ОТКРЫВАЕМ СТРАНИЦУ КАМЕРЫ
         btnSnapshot.setOnClickListener {
             val intent = Intent(this, CameraActivity::class.java)
             startActivity(intent)
