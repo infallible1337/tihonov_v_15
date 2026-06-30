@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Надпись "Зарегистрироваться" - обрабатываем клик
         val tvRegister = findViewById<android.widget.TextView>(android.R.id.text1)
-        // У нас нет id для TextView "Зарегистрироваться", поэтому добавим его позже
+
 
         btnLogin.setOnClickListener {
             val username = etUsername.text.toString().trim()

@@ -41,7 +41,7 @@
         android:textSize="16sp"
         android:layout_marginBottom="24dp" />
 
-    <!-- Надпись "Зарегистрироваться" (НЕ КНОПКА) -->
+    <!-- Надпись "Зарегистрироваться" -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         android:clickable="true"
         android:focusable="true" />
 
-    <!-- Кнопка "Авторизоваться" (КРАСНАЯ) -->
+    <!-- Кнопка "Авторизоваться" -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"

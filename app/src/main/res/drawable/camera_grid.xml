@@ -8,7 +8,7 @@
         </shape>
     </item>
 
-    <!-- Горизонтальные линии (рисунок сетки) -->
+
     <item>
         <shape android:shape="rectangle">
             <stroke

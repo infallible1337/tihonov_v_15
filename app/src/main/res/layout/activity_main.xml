@@ -91,7 +91,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Три кнопки снизу (ВСЕ КРАСНЫЕ) -->
+    <!-- Три кнопки снизу -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
             android:layout_marginStart="4dp" />
     </LinearLayout>
 
-    <!-- Кнопка Настройки (КРАСНАЯ) -->
+    <!-- Кнопка Настройки -->
     <Button
         android:id="@+id/btnSettings"
         android:layout_width="match_parent"

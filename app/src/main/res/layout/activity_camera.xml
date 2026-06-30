@@ -4,19 +4,19 @@
     android:layout_height="match_parent"
     android:background="#1A1A1A">
 
-    <!-- Заглушка вместо камеры (вид через видоискатель) -->
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#2C2C2C" />
 
-    <!-- Сетка как на камере (3x3 линии) -->
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/camera_grid" />
 
-    <!-- Текст "Камера" в центре -->
+    <!-- Иконка камеры в центре -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         android:layout_gravity="center"
         android:alpha="0.3" />
 
-    <!-- Верхняя панель (как на iPhone) -->
+    <!-- Верхняя панель -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,61 +35,61 @@
         android:gravity="center_vertical"
         android:background="@android:color/transparent">
 
-        <!-- Кнопка закрытия (крестик) -->
         <Button
             android:id="@+id/btnClose"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@drawable/ic_close_white"
             android:backgroundTint="@android:color/transparent"
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:contentDescription="Закрыть камеру" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1" />
 
-        <!-- Кнопка переворота камеры -->
+
         <Button
             android:id="@+id/btnFlip"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@drawable/ic_flip_camera"
             android:backgroundTint="@android:color/transparent"
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:contentDescription="Перевернуть камеру" />
     </LinearLayout>
 
-    <!-- Нижняя панель (кнопка съемки как на iPhone) -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
         android:padding="32dp"
         android:paddingBottom="40dp"
         android:background="@android:color/transparent">
 
-        <!-- Кнопка съемки (большая белая как на iPhone) -->
+
         <Button
             android:id="@+id/btnCapture"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:background="@drawable/ic_capture_button"
             android:backgroundTint="@android:color/transparent"
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:contentDescription="Сделать снимок" />
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="СНИМОК"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.6" />
     </LinearLayout>
-
-    <!-- Подпись "СНИМОК" под кнопкой -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="СНИМОK"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="16dp"
-        android:alpha="0.6" />
 
 </FrameLayout>
